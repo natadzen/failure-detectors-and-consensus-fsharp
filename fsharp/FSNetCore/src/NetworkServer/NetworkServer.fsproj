@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="MessageSerialization.fs" />
+    <Compile Include="NetworkServer.fs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="FsPickler" Version="5.2" />
+    <PackageReference Include="FsPickler.Json" Version="5.2" />
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\DataContracts\DataContracts.fsproj" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DataContracts\DataContracts.fsproj" />
+    <ProjectReference Include="..\NetworkServer\NetworkServer.fsproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DataTypes.fs" />
+    <Compile Include="FailureDetectors.fs" />
+    <Compile Include="FailureDetectorsPingAck.fs" />
+    <Compile Include="FailureDetectorsHeartbeat.fs" />
+    <Compile Include="FailureDetectorsHeartbeatRecovery.fs" />
+    <Compile Include="FailureDetectorsHeartbeatSlidingWindow.fs" />
+    <Compile Include="FailureDetectorsHeartbeatSuspectLevel.fs" />
+    <Compile Include="GossippingFailureDetector.fs" />
+    <Compile Include="Consensus.fs" />
+    <Compile Include="Node.fs" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="FsPickler" Version="5.2" />
+    <PackageReference Include="FsPickler.Json" Version="5.2" />
+  </ItemGroup>
+</Project>
