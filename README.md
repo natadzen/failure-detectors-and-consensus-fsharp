@@ -1,6 +1,6 @@
 # **Failure Detection and Consensus in Distributed Systems with F\#**
 
-**Date**: MM/dd/2019
+**Date**: 03/17/2019
 
 **Author**: [Natallia Dzenisenka](https://twitter.com/nata_dzen)
 
